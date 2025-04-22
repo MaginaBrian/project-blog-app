@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "../index.css"
 
 const BlogPost = ({ post, onUpdate, onDelete }) => {
   const [isEditing, setIsEditing] = useState(false);
