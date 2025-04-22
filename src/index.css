@@ -9,6 +9,7 @@
   border-color: black;
   margin-bottom: 2px;
   border-style: solid;
+  
 }
 
 .blog-form-heading {
@@ -68,7 +69,7 @@
 .blog-list-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.5px;
 }
 
 .blog-list-empty {
@@ -79,10 +80,10 @@
 
 .blog-post {
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 20px;
   border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  border-color: #111827;
+  border-style: solid;
 }
 
 .blog-post:hover {
@@ -91,25 +92,29 @@
 
 
 .blog-post-title {
-  font-size: 1.75rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  text-decoration: underline;
 }
 
 
 .blog-post-content {
   color: #4b5563;
-  font-size: 1.1rem;
+  font-size: 15px;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  text-align: start;
 }
 
 
 .blog-post-buttons {
   display: flex;
-  gap: 0.75rem;
-  margin-top: 1rem;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
 }
 
 
@@ -117,11 +122,10 @@
 .blog-post-delete,
 .blog-post-save,
 .blog-post-cancel {
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.5rem;
+  padding: 7px;
+  border-radius: 5px;
   font-weight: 600;
-  font-size: 0.95rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -133,7 +137,7 @@
 
 .blog-post-edit-btn:hover {
   background-color: #2563eb;
-  transform: translateY(-1px);
+  
 }
 
 .blog-post-delete {
@@ -143,7 +147,7 @@
 
 .blog-post-delete:hover {
   background-color: #dc2626;
-  transform: translateY(-1px);
+  
 }
 
 .blog-post-save {
@@ -153,7 +157,7 @@
 
 .blog-post-save:hover {
   background-color: #059669;
-  transform: translateY(-1px);
+  
 }
 
 .blog-post-cancel {
@@ -163,7 +167,7 @@
 
 .blog-post-cancel:hover {
   background-color: #4b5563;
-  transform: translateY(-1px);
+  
 }
 
 
