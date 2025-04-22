@@ -8,7 +8,7 @@ const BlogList = ({ posts, onUpdate, onDelete }) => {
         <p className="blog-list-empty">No posts available</p>
       ) : (
         posts.map(post => (
-          <BlogPost key={post.id} post={post} onUpdate={onUpdate} onDelete={onDelete} />
+          <BlogPost key={post.id} post={post} onUpdate={onUpdate} onDelete={onDelete}  />
         ))
       )}
     </div>
