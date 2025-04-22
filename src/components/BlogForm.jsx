@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './blog.css';
+import "../index.css";
 
 const BlogForm = ({ onSubmit, loading }) => {
   const [title, setTitle] = useState('');
