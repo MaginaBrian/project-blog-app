@@ -1,10 +1,11 @@
 import BlogPost from './BlogPost';
+import "../index.css"
 
 const BlogList = ({ posts, onUpdate, onDelete }) => {
   return (
-    <div className="space-y-6">
+    <div className="blog-list-container">
       {posts.length === 0 ? (
-        <p className="text-center text-gray-500">No posts available</p>
+        <p className="blog-list-empty">No posts available</p>
       ) : (
         posts.map(post => (
           <BlogPost key={post.id} post={post} onUpdate={onUpdate} onDelete={onDelete} />
