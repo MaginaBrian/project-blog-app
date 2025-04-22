@@ -1,5 +1,5 @@
 import BlogPost from './BlogPost';
-import "../index.css"
+import "../index.css";
 
 const BlogList = ({ posts, onUpdate, onDelete }) => {
   return (
