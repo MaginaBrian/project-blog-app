@@ -14,7 +14,7 @@ const App = () => {
   const fetchPosts = async () => {
     setLoading(true);
     try {
-      const response = await fetch('https://project-mockup-dbjson.vercel.app/posts');
+      const response = await fetch('https://jsonplaceholder.typicode.com/posts');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -32,7 +32,7 @@ const App = () => {
   const createPost = async (post) => {
     setLoading(true);
     try {
-      const response = await fetch('https://project-mockup-dbjson.vercel.app/posts', {
+      const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ const App = () => {
   const updatePost = async (id, updatedPost) => {
     setLoading(true);
     try {
-      const response = await fetch(`https://project-mockup-dbjson.vercel.app/posts/${id}`, {
+      const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ const App = () => {
   const deletePost = async (id) => {
     setLoading(true);
     try {
-      const response = await fetch(`https://project-mockup-dbjson.vercel.app/posts/${id}`, {
+      const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
